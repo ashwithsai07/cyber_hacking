@@ -86,7 +86,7 @@ DATABASES = {
 
     }
 }
-
+postgres://ndaxbgdvomazta:45ecb947ba48c1891e685a081bc8a66f7f62f52b3dad0e89c3cf08b9db4011d2@ec2-176-34-222-188.eu-west-1.compute.amazonaws.com:5432/d6lgv8at8542i4
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -126,10 +126,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-if DEBUG:
-    STATICFILES_DIRS= [os.path.join(BASE_DIR,'assets/static'),]
-else:
-    STATIC_ROOT=os.path.join(BASE_DIR,'assets/static')
+# if DEBUG:
+#     STATICFILES_DIRS= [os.path.join(BASE_DIR,'assets/static'),]
+# else:
+    STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'assets/media')
